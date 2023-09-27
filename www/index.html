@@ -1,14 +1,121 @@
 <!DOCTYPE html>
-<html lang="uk-UA">
+<html class="bg-gray-900 text-gray-300" lang="uk-UA">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пісочниця HTML</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" /> -->
   </head>
-  <body>
-    <p>Перша сторінка</p>
+  <body class="m-0 font-sans">
+    <div id="login-screen" class="flex h-screen items-center justify-center p-16 gap-20 flex-row flex-wrap md:flex-nowrap">
+      <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" />
+      <div id="login-card" class="bg-blue-400 px-12 py-12 text-white">
+          <h2 class="text-xl mb-4 font-semibold">Please enter login/password</h2>
+          <form class="flex flex-col gap-5" onsubmit="function submit(e) {
+            e.preventDefault();
+          }">
+            <input class="text-slate-900 
+            focus:outline-none border-4 border-white focus:border-green-200" type="email" placeholder="Email" />
+            <input class="text-slate-900 
+            focus:outline-none border-4 border-white focus:border-green-200"  type="password" placeholder="Password" />
+            <input class="bg-green-600 font-bold
+            focus:outline-none border-4 border-green-600 focus:border-green-200"  type="submit" value="Log in">
+          </form>
+      </div>
+    </div>
+    <h1>
+      Перша сторінка
+    </h1>
 
     <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt="Firefox icon" />
     
-    <p> Посилання на цей репозиторій: <a href="https://github.com/illia-b/html-sandbox">github:illia-b/html-sandbox</a>
+    <p>
+      Посилання на цей репозиторій: 
+      <a href="https://github.com/illia-b/html-sandbox" title="Repo URL">github:illia-b/html-sandbox</a>
+    </p>
+
+    <h3>Планети</h3>
+    <p>
+      Невпорядкований перелік:
+    </p>
+    <ul class="list-disc">
+      <li class="inline">Меркурій</li>
+      <li class="inline">Венера</li>
+      <li class="inline"><em>Земля</em></li>
+      <li class="inline">Марс</li>
+      <li class="inline">Юпітер</li>
+      <li class="inline">Сатурн</li>
+      <li class="inline">Уран</li>
+      <li class="inline">Нептун</li>
+    </ul>
+    <p>
+      Впорядкований перелік:
+    </p>
+    <ol class=" list-disc">
+      <li>Меркурій</li>
+      <li>Венера</li>
+      <li><strong>Земля</strong></li>
+      <li>Марс</li>
+      <li>Юпітер</li>
+      <li>Сатурн</li>
+      <li>Уран</li>
+      <li>Нептун</li>
+    </ol> 
+
+    <header class="bg-purple-800 pt-8 h-28 text-7xl">
+      <h1 class="text-center leading-10">Sample flexbox example </h1>
+    </header>
+
+    <section class="flex flex-wrap bottom-0 bg-red-400">
+      <article class="p-5 m-5 bg-teal-700 basis-1/4">
+        <h2 class="text-xl font-bold">First article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+      </article>
+      <article class="p-5 m-5 bg-teal-700 basis-1/4">
+        <h2 class="text-xl font-bold">First article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+      </article>
+      <article class="p-5 m-5 bg-teal-700 basis-2/4">
+        <h2 class="text-xl font-bold">First article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+      </article>
+      <article class="p-5 m-5 bg-teal-700 basis-1/4">
+        <h2 class="text-xl font-bold">First article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+      </article>
+
+      <article class="p-5 m-5 bg-teal-700 basis-1/4">
+        <h2 class="text-xl font-bold">Second article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+      </article>
+      <article class="p-5 m-5 bg-teal-700 basis-1/4">
+        <h2 class="text-xl font-bold">Fourth article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+
+        <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+      </article>
+      <article class="p-5 m-5 bg-teal-700 basis-1/4">
+        <h2 class="text-xl font-bold">Fifth article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+
+        <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+      </article>
+    </section>
+  </div>
+
+    
+    <div class="flex bg-gray-400">
+      <div class="flex-initial w-32 bg-gray-800">One</div>
+      <div class="flex-initial w-64 bg-gray-500">Two</div>
+      <div class="flex-initial w-16 bg-gray-800">Three</div>
+    </div>
   </body>
 </html>
